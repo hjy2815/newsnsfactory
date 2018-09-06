@@ -44,7 +44,7 @@
     "favicon": "",
     "noImageResize": "",
     "cookiesAlert": "We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.",
-    "gdpr": "By continiung you agree to our <a href='terms.html'>Terms of Service</a> and <a href='policy.html'>Privacy Policy</a>.",
+    "gdpr": "",
     "google-analytics": "",
     "sitemapSwitcher": "on"
   },
@@ -54,7 +54,7 @@
         "main": true,
         "title": "SNSFACTORY",
         "meta_descr": "",
-        "header_custom": "<head>\n    <title>SNSFACTORY</title>\n    <meta property=\"og:url\" content=\"http://snsfactory.co.kr/\">\n    <meta property=\"og:title\" content=\"SNSFACTORY\">  \n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:image\" content=\"https://i.imgur.com/C0VfwLA.png\">\n    <meta property=\"og:description\" content=\"SNS 좋아요·팔로워늘리기 자동시스템\">\n    <meta name=\"description\" content=\"SNS 좋아요·팔로워늘리기 자동시스템\">\n    <meta name=\"keywords\" content=\"SNS 좋아요·팔로워늘리기 자동시스템\">\n<meta name=\"robots\" content=\"index,follow\">\n<meta name=\"naver-site-verification\" content=\"973784f3315d171ac35ee666f97de3431d49459c\"/>\n<meta name=\"google-site-verification\" content=\"rZL-RFrpDNVD_p2y99wrjxRVZoINPRa233VfYarI4_g\" />\n</head>",
+        "header_custom": "<head>\n    <meta name=\"google-site-verification\" content=\"rZL-RFrpDNVD_p2y99wrjxRVZoINPRa233VfYarI4_g\" />\n    <title>SNSFACTORY</title>\n    <meta property=\"og:url\" content=\"http://snsfactory.co.kr/\">\n    <meta property=\"og:title\" content=\"SNSFACTORY\">  \n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:image\" content=\"https://i.imgur.com/C0VfwLA.png\">\n    <meta property=\"og:description\" content=\"SNS 좋아요·팔로워늘리기 자동시스템\">\n    <meta name=\"description\" content=\"SNS 좋아요·팔로워늘리기 자동시스템\">\n    <meta name=\"keywords\" content=\"SNS 좋아요·팔로워늘리기 자동시스템\">\n<meta name=\"robots\" content=\"index,follow\">\n<meta name=\"naver-site-verification\" content=\"973784f3315d171ac35ee666f97de3431d49459c\"/>\n</head>",
         "footer_custom": "",
         "html_before": ""
       },
@@ -286,43 +286,6 @@
         },
         {
           "_styles": {
-            "& when (@fullWidth = false)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "background": "@bgColor",
-            "& when (@gradientBg)": {
-              "background": "linear-gradient(90deg, @bgColor, @color2)"
-            },
-            ".container-fluid": {
-              "padding": "0 3rem"
-            },
-            ".video-block": {
-              "margin": "auto",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".container-fluid": {
-                "padding": "0 1rem"
-              },
-              ".video-block": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "video1",
-          "_customHTML": "<section group=\"Images & Videos\" class=\"video1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"1\" step=\"1\" condition=\"fullWidth == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"1\" step=\"1\" condition=\"fullWidth == false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"72\" step=\"1\" condition=\"fullWidth == false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth == false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth == false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg && fullWidth == false\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container-fluid':fullWidth == false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=VQDxbuHPfJs&loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
-          "_cid": "r1ZWqPnJbp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "video1-q"
-        },
-        {
-          "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = 'color')": {
@@ -404,6 +367,43 @@
           "_isUserblock": true,
           "_sourceTheme": "storem4",
           "_cid": "r1ZVNYyLLK",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(90deg, @bgColor, @color2)"
+            },
+            ".container-fluid": {
+              "padding": "0 3rem"
+            },
+            ".video-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".video-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "video1",
+          "_customHTML": "<section group=\"Images & Videos\" class=\"video1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"1\" step=\"1\" condition=\"fullWidth == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"72\" step=\"1\" condition=\"fullWidth == false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth == false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth == false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg && fullWidth == false\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container-fluid':fullWidth == false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=VQDxbuHPfJs&loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_cid": "r1ZWqPnJbp",
+          "_anchor": "video1-q",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
